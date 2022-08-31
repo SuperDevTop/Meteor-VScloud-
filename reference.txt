@@ -1,0 +1,12 @@
+
+
+https://bitbucket.org/vs1project/vs1_cloud_project/src/main/
+
+--vs1cloud--
+username:   dev@vs1cloud.com
+password:   devTeam@123
+
+
+--xero--
+mail: olakunleariyibi1@gmail.com
+pass: AdeOla2019

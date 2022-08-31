@@ -1,0 +1,37 @@
+Installing Meteor on Windows:
+======================================
+Step 1: Install node 8.8.1
+https://nodejs.org/ru/blog/release/v8.8.1/
+
+Step 2: Install Choco using below command (run as an admin)
+
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+*** choco feature enable -n userFipsCompliantChecksums ***
+
+Step 3: Install Meteor 
+choco install meteor --release 1.6
+
+Step 4: Extract VS1 code 
+
+Step 5: Extract node_module from the link below to the root folder.
+https://drive.google.com/drive/folders/1CfZP85qz3t8VmQ-jRgwPKxopsv-Q6sMv?usp=sharing
+
+Step 5: Run CMD as an admin
+
+Run :- set TOOL_NODE_FLAGS=--max-old-space-size=3300 
+Run :- set NODE_TLS_REJECT_UNAUTHORIZED=0 
+Run :- meteor
+
+*** go to "git bash", then "TOOL_NODE_FLAGS=--max-old-space-size=3300 NODE_TLS_REJECT_UNAUTHORIZED=0 npm run start"
+
+
+*********
+https://riptutorial.com/meteor/example/1459/getting-started : offline installer
+*********
+
+https://developer.apple.com/forums/thread/690975
+https://forums.meteor.com/t/meteor-on-windows-10-doesnt-appear-to-work-very-well/40237/2
+https://medium.com/@sfthurber_2831/meteor-development-setup-for-windows-10-baa1b0b205dc
+
+
